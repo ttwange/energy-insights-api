@@ -5,7 +5,7 @@ Flash: https://img.shields.io/badge/flask-3.x-lightgrey.svg
 PostgreSQL: https://img.shields.io/badge/postgresql-15.x-blue.svg
 Docker: https://img.shields.io/badge/docker-compose-blue.svg
 
-A containerized **Flask + PostgreSQL** data API that fetches and stores live *electricity demand* and **CO₂ emission data** from the [Danish Energy Data Service](https://www.energydataservice.dk/).  
+A containerized **Flask + PostgreSQL** data API that fetches and stores live **electricity demand** and **CO₂ emission data** from the [Danish Energy Data Service](https://www.energydataservice.dk/).  
 This project is part of a broader DevOps & Data Engineering learning roadmap.
 ```
 ```
@@ -36,9 +36,9 @@ This project is part of a broader DevOps & Data Engineering learning roadmap.
 You can access endpoints locally on:
 
 
-Demand: http://localhost:5050/v1/energy/dk/demand
-Emissions: http://localhost:5050/v1/energy/dk/emissions
-Test health: http://localhost:5050/v1/health
+Demand: http://localhost:5050/v1/energy/dk/demand;
+Emissions: http://localhost:5050/v1/energy/dk/emissions;
+Test health: http://localhost:5050/v1/health;
 ````
 ## ⚙️ Setup & Run
 
