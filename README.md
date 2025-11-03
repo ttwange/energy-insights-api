@@ -1,5 +1,3 @@
-
-```markdown
 ## ⚡ Energy Insights API
 
 Python: https://img.shields.io/badge/python-3.10%2B-blue.svg
@@ -7,7 +5,7 @@ Flash: https://img.shields.io/badge/flask-3.x-lightgrey.svg
 PostgreSQL: https://img.shields.io/badge/postgresql-15.x-blue.svg
 Docker: https://img.shields.io/badge/docker-compose-blue.svg
 
-A containerized **Flask + PostgreSQL** data API that fetches and stores live **electricity demand** and **CO₂ emission data** from the [Danish Energy Data Service](https://www.energydataservice.dk/).  
+A containerized **Flask + PostgreSQL** data API that fetches and stores live *electricity demand* and **CO₂ emission data** from the [Danish Energy Data Service](https://www.energydataservice.dk/).  
 This project is part of a broader DevOps & Data Engineering learning roadmap.
 ```
 ```
