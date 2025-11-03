@@ -44,7 +44,7 @@ Test health: http://localhost:5050/v1/health;
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/<your-username>/energy-insights-api.git
+git clone ~/energy-insights-api.git
 cd energy-insights-api
 ````
 
