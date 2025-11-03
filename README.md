@@ -114,13 +114,13 @@ energy-insights-api/
 Open Postgres inside Docker Desktop or terminal:
 
 ```bash
-docker-compose exec db psql -U energy_user -d energy_db
+docker-compose exec db psql -U {user} -d {database}
 ```
 
 | Action                | Command                                |
 | --------------------- | -------------------------------------- |
 | List databases        | `\l`                                   |
-| Connect to a DB       | `\c energy_db`                         |
+| Connect to a DB       | `\c {database}`                         |
 | List tables           | `\dt`                                  |
 | Describe table schema | `\d energy_demand`                     |
 | Show first 5 rows     | `SELECT * FROM energy_demand LIMIT 5;` |
@@ -158,19 +158,6 @@ To reset the database completely:
 ```bash
 docker-compose down -v
 ```
-
-### 🔹 Access Postgres from GUI (optional)
-
-Use pgAdmin, DBeaver, or TablePlus:
-
-```
-Host: localhost
-Port: 5432
-User: energy_user
-Password: energy_pass
-Database: energy_db
-```
-
 ---
 
 ## 🐳 Common Docker Commands
@@ -210,40 +197,4 @@ Next, you will:
 
 ## 🧩 Author
 
-Developed as part of a **Data Engineering & DevOps learning roadmap**, integrating open energy data, containerized infrastructure, and cloud deployment workflows.
-
----
-
-## 🚀 Roadmap
-
-| Phase   | Description                          | Status      |
-| ------- | ------------------------------------ | ----------- |
-| **1**   | VPS Hardening (non-root + UFW)       | ✅ Done      |
-| **2**   | Flask API + Docker Setup             | ✅ Done      |
-| **3**   | PostgreSQL Integration               | ✅ Done      |
-| **3.5** | Auto-Reload Development Mode         | ✅ Done      |
-| **4**   | Nginx Reverse Proxy + SSL            | 🔜 Next     |
-| **5**   | CI/CD (GitHub Actions → Contabo VPS) | 🔜 Upcoming |
-| **6**   | Visualization (Grafana / Superset)   | 🔜 Future   |
-
----
-
-🟢 **Next Step → [Phase 4: Nginx Reverse Proxy Setup](#)**
-Expose your API publicly via:
-
-```
-http://<your-vps-ip>/v1/energy/dk/demand
-```
-
-and later:
-
-```
-https://<your-domain>/v1/energy/dk/demand
-```
-
-```
-
----
-
-Would you like me to also create a **minimal “docs/quick-commands.md”** file that contains only the Postgres and Docker cheat-sheet for easier reference during development?
-```
+Developed as part of a **Data Engineering & DevOps learning roadmap**, integrating open energy data, containerized infrastructure, and cloud 
